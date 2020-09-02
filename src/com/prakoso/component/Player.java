@@ -88,8 +88,8 @@ public class Player {
         System.out.println("Player Name\t\t: " + this.name);
         System.out.println("Level\t\t\t: " + this.level);
         System.out.println("Healt(HP)\t\t: " + this.getHealt() + "/" + this.maxHealt());
-        System.out.println("Defence(DP)\t\t: " + this.getDefence());
-        System.out.println("Attack(AP)\t\t: " + this.getAttack() + "\n");
+        System.out.println("Defence(DP)\t\t: " + this.getDefence() + "(+" + this.armor.getName() + ")");
+        System.out.println("Attack(AP)\t\t: " + this.getAttack() + "(+" + this.weapon.getName() + ")" + "\n");
     }
 
 }
