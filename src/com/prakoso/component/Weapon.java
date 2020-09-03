@@ -18,4 +18,9 @@ public class Weapon {
     public String getName() {
         return this.name;
     }
+
+    public void display(){
+        System.out.printf("===== %s =====\n",this.name);
+        System.out.println("Attack Power = " + this.weaponAttack);
+    }
 }

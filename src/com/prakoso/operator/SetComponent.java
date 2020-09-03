@@ -1,7 +1,7 @@
 package com.prakoso.operator;
 
-import com.prakoso.component.*;
 import java.util.Scanner;
+import com.prakoso.component.*;
 import static com.prakoso.component.ComponentList.*;
 
 public class SetComponent {

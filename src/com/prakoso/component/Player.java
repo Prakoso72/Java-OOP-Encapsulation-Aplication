@@ -92,4 +92,10 @@ public class Player {
         System.out.println("Attack(AP)\t\t: " + this.getAttack() + "(+" + this.weapon.getName() + ")" + "\n");
     }
 
+    public void baseDisplay(){
+        System.out.printf("===== %s =====\n",this.name);
+        System.out.println("Healt\t\t = " + this.baseHealt);
+        System.out.println("Attack Power = " + this.basAttack);
+    }
+
 }

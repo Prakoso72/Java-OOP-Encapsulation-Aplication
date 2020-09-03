@@ -27,4 +27,10 @@ public class Armor {
     public String getName() {
         return this.name;
     }
+
+    public void display(){
+        System.out.printf("===== %s =====\n",this.name);
+        System.out.println("Defence\t\t = " + this.defenceArmor);
+        System.out.println("Healt Bonus\t = " + this.healtArmor);
+    }
 }
