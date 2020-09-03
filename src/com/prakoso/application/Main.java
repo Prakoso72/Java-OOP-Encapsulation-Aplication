@@ -23,6 +23,7 @@ public class Main {
             System.out.println("4. Pick Your Hero and Equipment");
             System.out.println("5. Pick Opponent Hero and Equipment");
             System.out.println("6. Battle");
+            System.out.println("7. Exit");
 
             System.out.print("\nSelect: ");
             int numMenu = inputMenu.nextInt();
@@ -51,6 +52,11 @@ public class Main {
                         System.out.println("Pick hero or opponent first!");
                     }
                     break;
+                case 7:
+                    isContinue = false;
+                    break;
+                default:
+                    System.err.println("Eror!!");
             }
 
         }
