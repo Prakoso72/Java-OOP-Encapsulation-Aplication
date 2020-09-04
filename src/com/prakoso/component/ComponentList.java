@@ -11,7 +11,7 @@ public class ComponentList {
         Player player4 = new Player("Invoker",100,25,18,17);
         Player player5 = new Player("Riki",100,24,22,11);
 
-        ArrayList<Player> players = new ArrayList<Player>();
+        ArrayList<Player> players = new ArrayList<>();
         players.add(player1);
         players.add(player2);
         players.add(player3);
@@ -28,7 +28,7 @@ public class ComponentList {
         Armor armor4 = new Armor("Solar Crest",25,25);
         Armor armor5 = new Armor("Crimson Guard",28,24);
 
-        ArrayList<Armor> armors = new ArrayList<Armor>();
+        ArrayList<Armor> armors = new ArrayList<>();
         armors.add(armor1);
         armors.add(armor2);
         armors.add(armor3);
@@ -45,7 +45,7 @@ public class ComponentList {
         Weapon weapon4 = new Weapon("Desolator",25);
         Weapon weapon5 = new Weapon("Aghanim's Scepter",30);
 
-        ArrayList<Weapon> weapons = new ArrayList<Weapon>();
+        ArrayList<Weapon> weapons = new ArrayList<>();
         weapons.add(weapon1);
         weapons.add(weapon2);
         weapons.add(weapon3);

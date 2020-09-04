@@ -23,6 +23,7 @@ public class Player {
         this.incrementAttack = incrementAttackDefence;
         this.incrementDefence = incrementAttackDefence;
         this.incrementHealth = incrementHealth;
+        this.isAlive = true;
     }
 
     public void attack(Player opponent) {
@@ -44,12 +45,12 @@ public class Player {
         this.totalDamage += deltaDamage;
 
         System.out.println("Damage earned = " + deltaDamage + " DP");
-        getHealt();
         if (getHealt() <= 0) {
             isAlive = false;
             this.totalDamage = this.maxHealt();
         }
-        this.display();
+
+        System.out.println(this.name + " healt = " + this.getHealt() + "\n");
     }
 
     private int maxHealt() {
@@ -58,6 +59,10 @@ public class Player {
 
     private int getHealt() {
         return this.maxHealt() - this.totalDamage;
+    }
+
+    public boolean getIsAlive(){
+        return this.isAlive;
     }
 
     private void levelUp() {
@@ -95,7 +100,7 @@ public class Player {
     public void baseDisplay(){
         System.out.printf("===== %s =====\n",this.name);
         System.out.println("Healt\t\t = " + this.baseHealt);
-        System.out.println("Attack Power = " + this.basAttack);
+        System.out.println("Attack Power\t = " + this.basAttack);
     }
 
 }

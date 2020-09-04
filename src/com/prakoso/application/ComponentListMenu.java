@@ -1,10 +1,12 @@
 package com.prakoso.application;
 
 import static com.prakoso.component.ComponentList.*;
+import static com.prakoso.operator.Utility.clearScreen;
 
-public class ListMenu {
+public class ComponentListMenu {
 
     static void playerList(){
+        clearScreen();
         System.out.println("\n---------\nHERO LIST\n---------\n");
         int num=0;
 
@@ -15,9 +17,12 @@ public class ListMenu {
                 num++;
             }
         } catch (Exception e){}
+        System.out.println("Press enter to continue!");
+
     }
 
     static void armorList(){
+        clearScreen();
         System.out.println("\n----------\nARMOR LIST\n----------\n");
         int num=0;
 
@@ -28,9 +33,12 @@ public class ListMenu {
                 num++;
             }
         } catch (Exception e){}
+        System.out.println("Press enter to continue!");
+
     }
 
     static void weaponList(){
+        clearScreen();
         System.out.println("\n-----------\nWEAPON LIST\n-----------\n");
         int num=0;
 
@@ -41,5 +49,7 @@ public class ListMenu {
                 num++;
             }
         } catch (Exception e){};
+        System.out.println("Press enter to continue!");
+
     }
 }

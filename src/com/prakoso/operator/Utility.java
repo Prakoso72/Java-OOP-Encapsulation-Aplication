@@ -16,24 +16,9 @@ public class Utility {
         }
     }
 
-    public static boolean getYesNo(String massage){
-
-        Scanner getYesNoInput = new Scanner (System.in);
-        String userInput;
-        boolean outputBoolean;
-
-        System.out.print("\n" + massage + " y/n : ");
-        userInput = getYesNoInput.next();
-
-        while (!userInput.equalsIgnoreCase("y") && !userInput.equalsIgnoreCase("n")){
-            System.err.println("Wrong Keyword!");
-            System.out.print("\n" + massage + " y/n : ");
-            userInput = getYesNoInput.next();
-        }
-
-        outputBoolean = userInput.equalsIgnoreCase("y");
-        System.out.println();
-
-        return outputBoolean;
+    public static void enter(){
+        Scanner enterTerminal = new Scanner(System.in);
+        String enter = "enter";
+        enter = enterTerminal.nextLine();
     }
 }

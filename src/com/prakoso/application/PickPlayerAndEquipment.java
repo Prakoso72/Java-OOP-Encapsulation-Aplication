@@ -3,7 +3,6 @@ package com.prakoso.application;
 import com.prakoso.component.*;
 
 import static com.prakoso.component.ComponentList.*;
-import static com.prakoso.component.ComponentList.weaponArrayList;
 import static com.prakoso.operator.SetComponent.*;
 import static com.prakoso.operator.Utility.*;
 
@@ -30,6 +29,7 @@ class PickPlayerAndEquipment {
         setPlayerEquipment(hero,heroArmor,heroWeapon);
         hero.display();
 
+        System.out.println("Press enter to continue!");
         return hero;
     }
 

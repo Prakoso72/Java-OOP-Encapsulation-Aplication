@@ -30,33 +30,42 @@ public class Main {
 
             switch (numMenu) {
                 case 1:
-                    ListMenu.playerList();
+                    ComponentListMenu.playerList();
+                    Utility.enter();
                     break;
                 case 2:
-                    ListMenu.armorList();
+                    ComponentListMenu.armorList();
+                    Utility.enter();
                     break;
                 case 3:
-                    ListMenu.weaponList();
+                    ComponentListMenu.weaponList();
+                    Utility.enter();
                     break;
                 case 4:
                     hero = PickPlayerAndEquipment.menu();
+                    Utility.enter();
                     break;
                 case 5:
                     opponent = PickPlayerAndEquipment.menu();
+                    Utility.enter();
                     break;
                 case 6:
                     if (hero != null && opponent != null) {
-
+                        Battle.atacking(hero,opponent);
                         isContinue = false;
-                    } else {
-                        System.out.println("Pick hero or opponent first!");
+                    } else if (hero == null){
+                        System.out.println("Pick your hero first!");
+                    } else if (opponent == null){
+                        System.out.println("Pick your opponent hero first!");
                     }
+                    Utility.enter();
                     break;
                 case 7:
                     isContinue = false;
                     break;
                 default:
                     System.err.println("Eror!!");
+                    Utility.enter();
             }
 
         }

@@ -10,7 +10,7 @@ public class SetComponent {
         player.setWeapon(weapon);
     }
 
-    public static int selection() throws Exception{
+    public static int selection() {
         Scanner terminalInput = new Scanner(System.in);
         int input = 0;
         try {
@@ -36,12 +36,8 @@ public class SetComponent {
                 output = 5;
                 break;
             default:
-                System.err.print("EROR!! ");
-                if(Utility.getYesNo("Select Again?")){
-                    output = selection();
-                } else{
-                    break;
-                }
+                System.out.println("EROR!! ");
+                output = selection();
 
         }
         return output;
@@ -84,7 +80,7 @@ public class SetComponent {
                 output = armorArrayList().get(2);
                 break;
             case 4:
-                output = armorArrayList().get(3);;
+                output = armorArrayList().get(3);
                 break;
             case 5:
                 output = armorArrayList().get(4);
